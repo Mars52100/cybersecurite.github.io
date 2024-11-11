@@ -1,0 +1,191 @@
+body {
+    font-family: "Jaturat";
+    background-image: url('ee.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px; 
+    margin: auto;
+    gap: 10px; 
+}
+
+nav li {
+    position: relative;
+}
+
+.menu-title {
+    background-color: #7cf4e7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    width: 150px; 
+    cursor: pointer;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    width: 150px;
+    top: 100%;
+    z-index: 1000; 
+    max-height: 200px; 
+    overflow: auto; 
+}
+
+.submenu li {
+    padding: 8px 20px;
+}
+
+.menu-item input[type="checkbox"]:checked + .menu-title + .submenu {
+    display: block;
+}
+
+.menu-title:hover {
+    background-color: #555;
+}
+
+.signature {
+    font-size: 30px;
+    color: #7cf4e7;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #7cf4e7;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    position: absolute;
+    top: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #7cf4e7;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styles pour les listes */
+section ul, section ol, section dl {
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+    color: #fff;
+}
+
+section ul li, section ol li, section dl dt, section dl dd {
+    padding: 5px;
+    font-size: 16px;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    margin-left: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: #7cf4e7;
+}
+
+table th, table td {
+    border: 1px solid #7cf4e7;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: #7cf4e7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #7cf4e7;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+video {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7cf4e7;
+}
