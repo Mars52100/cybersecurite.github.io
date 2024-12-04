@@ -12,29 +12,30 @@
     showSlides(slideIndex = n);
   }
 
+  // Fonction pour afficher la diapositive en cours et mettre à jour les indicateurs
   function showSlides(n) {
     let i;
     const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
     
     if (n > slides.length) {
-      slideIndex = 1;
+      slideIndex = 1; // Si on dépasse la dernière, revenir à la première
     }
     if (n < 1) {
-      slideIndex = slides.length;
+      slideIndex = slides.length; // Si on est avant la première, revenir à la dernière
     }
     
-    // Cache tous les slides
+    // Masque toutes les diapositives
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
 
-    // Désactive toutes les "dots"
+    // Désactive toutes les "dots" (indicateurs)
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    // Affiche le slide courant et active la "dot" correspondante
+    // Affiche la diapositive en cours et active l'indicateur correspondant
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
   }
@@ -46,22 +47,23 @@
     const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
 
-    // Cache tous les slides
+    // Masque toutes les diapositives
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
 
     autoIndex++;
     if (autoIndex > slides.length) {
-      autoIndex = 1;
+      autoIndex = 1; // Si on dépasse la dernière, revenir à la première
     }
 
-    // Affiche le slide courant
+    // Affiche la diapositive en cours
     slides[autoIndex - 1].style.display = "block";
     dots[autoIndex - 1].className += " active";
-    setTimeout(autoSlides, 5000); // Change de slide toutes les 5 secondes
+
+    setTimeout(autoSlides, 5000); // Change de diapositive toutes les 5 secondes
   }
 
-  // Décommenter pour activer le défilement automatique :
+  // Décommenter la ligne suivante pour activer le défilement automatique
   // autoSlides();
 </script>

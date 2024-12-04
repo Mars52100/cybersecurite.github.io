@@ -1,71 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
+<!-- Définit la langue de la page en français -->
 <head>
     <meta charset="UTF-8">
+    <!-- Définit le jeu de caractères comme UTF-8 pour la compatibilité avec les caractères spéciaux -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assure que la page est responsive, en s'ajustant à la largeur de l'écran du périphérique -->
     <title>Type de menaces cyber à la maison</title>
+    <!-- Titre de la page qui sera affiché dans l'onglet du navigateur -->
     <link rel="stylesheet" href="style.css">
+    <!-- Lien vers le fichier CSS externe pour appliquer le style -->
 </head>
 <body>
-    <!-- Slideshow container -->
+    <!-- Conteneur pour le diaporama -->
     <div class="slideshow-container">
 
+        <!-- Première diapositive -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
+            <!-- Affiche le numéro de la diapositive -->
             <img src="img1.jpg" style="width:100%">
+            <!-- Image de la première diapositive -->
             <div class="text">Menace 1</div>
+            <!-- Texte de la première menace -->
         </div>
 
+        <!-- Deuxième diapositive -->
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
+            <!-- Affiche le numéro de la diapositive -->
             <img src="img2.png" style="width:100%">
+            <!-- Image de la deuxième diapositive -->
             <div class="text">Menace 2</div>
+            <!-- Texte de la deuxième menace -->
         </div>
 
+        <!-- Troisième diapositive -->
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
+            <!-- Affiche le numéro de la diapositive -->
             <img src="img3.png" style="width:100%">
+            <!-- Image de la troisième diapositive -->
             <div class="text">Menace 3</div>
+            <!-- Texte de la troisième menace -->
         </div>
 
-        <!-- Boutons Précédent et Suivant -->
+        <!-- Boutons pour naviguer entre les diapositives -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <!-- Bouton précédent -->
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Bouton suivant -->
     </div>
 
-    <!-- Points indicateurs -->
+    <!-- Indicateurs de positionnement sous forme de points -->
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
+        <!-- Premier point pour la première diapositive -->
         <span class="dot" onclick="currentSlide(2)"></span>
+        <!-- Deuxième point pour la deuxième diapositive -->
         <span class="dot" onclick="currentSlide(3)"></span>
+        <!-- Troisième point pour la troisième diapositive -->
     </div>
 
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
+        <!-- Initialisation de l'index de la diapositive à afficher (1) -->
 
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
+        <!-- Fonction pour naviguer entre les diapositives (négatif pour précédent, positif pour suivant) -->
 
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
+        <!-- Fonction pour afficher une diapositive spécifique en fonction du numéro de point cliqué -->
 
         function showSlides(n) {
             let i;
             const slides = document.getElementsByClassName("mySlides");
             const dots = document.getElementsByClassName("dot");
             if (n > slides.length) { slideIndex = 1 }
+            <!-- Si l'index dépasse le nombre de diapositives, revenir à la première -->
             if (n < 1) { slideIndex = slides.length }
+            <!-- Si l'index est inférieur à 1, revenir à la dernière diapositive -->
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
+            <!-- Masquer toutes les diapositives -->
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
+            <!-- Supprimer la classe active des indicateurs de points -->
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
+            <!-- Afficher la diapositive active et ajouter la classe active au point correspondant -->
         }
     </script>
 </body>

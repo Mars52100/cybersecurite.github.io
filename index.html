@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<!-- Déclare le type de document HTML, ici HTML5 -->
 <html lang="fr">
+  <!-- Définit la langue de la page comme étant le français -->
 <head>
     <meta charset="UTF-8">
+    <!-- Définit le jeu de caractères utilisé sur la page (UTF-8 permet une large compatibilité des caractères) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assure que la page est responsive, en ajustant la largeur à celle de l'écran de l'utilisateur -->
     <title>Cybersécurité : Sécurité à domicile</title>
+    <!-- Titre de la page qui s'affiche dans l'onglet du navigateur -->
     <link rel="icon" href="favicon.png" type="image/x-icon"> 
+    <!-- Lien vers l'icône du site qui s'affiche dans l'onglet du navigateur -->
     <style>
+        /* Définition d'une police personnalisée via @font-face */
         @font-face {
             font-family: "Jaturat";
             src: url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.eot");
@@ -15,6 +22,7 @@
                  url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.ttf") format("truetype"),
                  url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.svg#Jaturat") format("svg");
         }
+        /* Style du corps de la page */
         body {
             margin: 0;
             display: flex;
@@ -28,12 +36,14 @@
             font-family: "Jaturat";
             position: relative;
         }
+        /* Conteneur pour le contenu principal */
         .container {
             text-align: center;
             max-width: 600px;
             padding: 20px;
             border-radius: 10px;
         }
+        /* Style du logo en haut de la page */
         .logo {
             position: absolute;
             top: 10px;
@@ -45,15 +55,18 @@
             align-items: center;
             gap: 8px;
         }
+        /* Style de l'image dans le logo */
         .logo img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             transition: transform 0.3s ease;
         }
+        /* Effet de survol sur l'image du logo */
         .logo img:hover {
             transform: scale(1.2);
         }
+        /* Style du titre principal */
         .title {
             font-size: 2.5em;
             color: #7cf4e7;
@@ -61,6 +74,7 @@
             padding: 10px;
             margin: 20px;
         }
+        /* Style des boutons */
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -71,12 +85,14 @@
             font-size: 1em;
             border-radius: 5px;
         }
+        /* Positionnement des images dans les coins */
         .top-left-image, .top-right-image {
             position: absolute;
             width: 300px;
             height: auto;
             border-radius: 15px;
         }
+        /* Signature de bas de page */
         .signature {
             font-size: 1.2em;
             color: #7cf4e7;
@@ -84,10 +100,12 @@
             bottom: 10px;
             right: 10px;
         }
+        /* Position de l'image en haut à gauche */
         .top-left-image {
             top: 10px;
             left: 10px;
         }
+        /* Position de l'image en haut à droite */
         .top-right-image {
             top: 10px;
             right: 10px;
@@ -136,15 +154,23 @@
 </head>
 <body>
     <div class="logo">
+        <!-- Affiche le logo dans le coin supérieur -->
         <img src="Capture d'écran 2024-11-06 133658.png" alt="Logo">
         <span>NIKO TECH INC.</span>
+        <!-- Affiche le texte du logo -->
     </div>
     <img src="DALL·E-2024-11-06-13.48.png" alt="Image fait avec dall-e" class="top-left-image">
+    <!-- Affiche une image en haut à gauche -->
     <img src="Capture d'écran 2024-11-06 133556.png" alt="Image en haut à droite" class="top-right-image">
+    <!-- Affiche une image en haut à droite -->
     <div class="container">
+        <!-- Conteneur principal du contenu -->
         <h1 class="title">Cybersécurité : Sécurité à domicile</h1>
+        <!-- Titre de la page -->
         <a href="page 2.html" class="button">En savoir plus</a>
+        <!-- Lien vers une autre page avec un bouton -->
         <div class="signature">© 2024 NIKO TECH INC.</div>
+        <!-- Signature de copyright -->
     </div>
 </body>
 </html>
