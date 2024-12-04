@@ -46,8 +46,13 @@
             gap: 8px;
         }
         .logo img {
-            width: 50px;
-            height: 50px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; /* Coins arrondis en cercle */
+        transition: transform 0.3s ease;
+        }
+        .logo img:hover {
+            transform: scale(1.2);
         }
         .title {
             font-size: 67.7px;
@@ -64,6 +69,12 @@
             text-decoration: none;
             margin-top: 20px;
         }
+        .top-left-image, .top-right-image {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        border-radius: 15px  !important; /* Coins arrondis */
+    }
         .signature {
             font-size: 30px;
             color: #7cf4e7;
@@ -86,12 +97,13 @@
             border-radius: 0px;
         }
         .top-left-image {
-            left: 0px;
+        top: 0px;
+        left: 0px;
         }
         .top-right-image {
-            right: 0px;
-            top: 0px;
-        }
+        top: 0px;
+        right: 0px;
+    }
     </style>
 </head>
 <body>
