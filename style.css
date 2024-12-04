@@ -324,7 +324,7 @@ body {
 .logo img:hover {
     transform: scale(1.2);
 }
-.title1 {
+.title {
     font-size: 2.5em;
     color: #7cf4e7;
     text-transform: uppercase;
@@ -366,7 +366,6 @@ body {
 /* Styles pour écrans plus petits (mobile) */
 @media only screen and (max-width: 500px) {
     body {
-        background-image: url(img1.jpg);
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
