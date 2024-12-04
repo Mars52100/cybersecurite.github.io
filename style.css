@@ -1,4 +1,5 @@
-font-family: "Jaturat";
+body {
+    font-family: "Jaturat";
     background-image: url('ee.png');
     background-size: cover;
     background-position: center;
