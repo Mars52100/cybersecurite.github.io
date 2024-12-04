@@ -30,7 +30,7 @@ nav li {
 
 .menu-title {
     background-color: #7cf4e7;
-    color: #fff;
+    color: #f8f8f8;
     padding: 10px 20px;
     border: none;
     text-align: center;
@@ -57,10 +57,11 @@ nav li {
 
 .menu-item input[type="checkbox"]:checked + .menu-title + .submenu {
     display: block;
+    background-color: #000000;
 }
 
 .menu-title:hover {
-    background-color: #555;
+    background-color: #000000;
 }
 
 .signature {
@@ -106,7 +107,6 @@ nav li {
     border-radius: 10px;
 }
 
-/* Styles pour les listes */
 section ul, section ol, section dl {
     margin: 20px auto;
     padding: 0;
