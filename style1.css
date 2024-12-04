@@ -1,3 +1,13 @@
+          /* Styles pour écrans plus petits (mobile) */
+          @media only screen and (max-width: 500px) {
+            body {
+                background-image: url(img1.jpg);
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                height: auto;
+                padding: 20px;
+            }
         @font-face {
             font-family: "Jaturat";
             src: url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.eot");
@@ -84,17 +94,6 @@
             top: 10px;
             right: 10px;
         }
-
-        /* Styles pour écrans plus petits (mobile) */
-        @media only screen and (max-width: 500px) {
-            body {
-                background-image: url(img1.jpg);
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
-                height: auto;
-                padding: 20px;
-            }
             .logo {
                 top: 20px;
                 left: 20px;
