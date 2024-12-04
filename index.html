@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,11 @@
         @font-face {
             font-family: "Jaturat";
             src: url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.eot");
-            src: url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.eot?#iefix")format("embedded-opentype"),
-            url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.woff2")format("woff2"),
-            url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.woff")format("woff"),
-            url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.ttf")format("truetype"),
-            url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.svg#Jaturat")format("svg");
+            src: url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.eot?#iefix") format("embedded-opentype"),
+                 url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.woff2") format("woff2"),
+                 url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.woff") format("woff"),
+                 url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.ttf") format("truetype"),
+                 url("https://db.onlinewebfonts.com/t/cf3fb387331afda8f5d7f9c8dea3cd13.svg#Jaturat") format("svg");
         }
         body {
             margin: 0;
@@ -46,16 +46,16 @@
             gap: 8px;
         }
         .logo img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%; /* Coins arrondis en cercle */
-        transition: transform 0.3s ease;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
         }
         .logo img:hover {
             transform: scale(1.2);
         }
         .title {
-            font-size: 67.7px;
+            font-size: 2.5em;
             color: #7cf4e7;
             text-transform: uppercase;
             padding: 10px;
@@ -68,42 +68,71 @@
             color: #ffffff;
             text-decoration: none;
             margin-top: 20px;
+            font-size: 1em;
+            border-radius: 5px;
         }
         .top-left-image, .top-right-image {
-        position: absolute;
-        width: 300px;
-        height: auto;
-        border-radius: 15px  !important; /* Coins arrondis */
-    }
+            position: absolute;
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+        }
         .signature {
-            font-size: 30px;
+            font-size: 1.2em;
             color: #7cf4e7;
             position: absolute;
-            bottom: 0px;
+            bottom: 10px;
             right: 10px;
         }
         .top-left-image {
-            position: absolute;
-            top: 0px;
-            width: 300px;
-            height: auto;
-            border-radius: 1px;
+            top: 10px;
+            left: 10px;
         }
         .top-right-image {
-            position: absolute;
-            top: 0px;
-            width: 300px;
-            height: auto;
-            border-radius: 0px;
+            top: 10px;
+            right: 10px;
         }
-        .top-left-image {
-        top: 0px;
-        left: 0px;
+
+        /* Styles pour écrans plus petits (mobile) */
+        @media only screen and (max-width: 1000px) {
+            body {
+                background-color:#fa0101;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                height: auto;
+                padding: 20px;
+            }
+            .logo {
+                top: 20px;
+                left: 20px;
+                transform: none;
+            }
+            .top-left-image, .top-right-image {
+                width: 100px;
+            }
+            .container {
+                text-align: center;
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            .title {
+                font-size: 1.8em;
+                margin: 10px 0;
+            }
+            .button {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            .signature {
+                font-size: 1em;
+                text-align: center;
+                bottom: 10px;
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
-        .top-right-image {
-        top: 0px;
-        right: 0px;
-    }
     </style>
 </head>
 <body>
