@@ -108,5 +108,109 @@ nav li {
     left: 50%;
     transform: translateX(-50%);
     font-size: 40px;
-    color: #7
+    color: #7cf4e7;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section ul, section ol, section dl {
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+    color: #fff;
+}
+
+section ul li, section ol li, section dl dt, section dl dd {
+    padding: 5px;
+    font-size: 16px;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    margin-left: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: #7cf4e7;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table th, table td {
+    border: 1px solid #7cf4e7;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+table th {
+    background-color: #333;
+    color: #7cf4e7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+form button {
+    padding: 10px;
+    background-color: #7cf4e7;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+video {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7cf4e7;
 }
