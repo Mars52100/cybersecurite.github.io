@@ -214,3 +214,13 @@ footer {
     padding: 20px; /* Ajoute un padding de 20px autour du pied de page */
     color: #7cf4e7; /* Définit la couleur du texte à une teinte de bleu */
 }
+.mySlides img {
+    width: 60%; /* Cela permettra à toutes les images dans les diapositives d'avoir la même largeur */
+    height: auto; /* Cela conserve les proportions de l'image */
+}
+
+/* Si tu veux redimensionner spécifiquement l'image 3 */
+.mySlides .img3 {
+    width: 30%;  /* Ajuste la largeur de l'image */
+    height: auto; /* Maintient les proportions de l'image */
+}
